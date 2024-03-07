@@ -46,3 +46,15 @@ Configuration
 -------------
 The configuration of dwm is done by creating a custom config.h
 and (re)compiling the source code.
+
+
+Fork Build/Install
+------------------
+Current steps taken to install my fork with all patches:
+
+1. `git apply -3 patches/*`
+1. `make`
+1. `sudo make install`
+1. `mkdir ~/.dwm`
+1. `cp autostart.sh ~/.dwm/autostart.sh`
+1. `chmod +x ~/.dwm/autostart.sh`
